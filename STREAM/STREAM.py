@@ -112,9 +112,9 @@ def Read_In_Data(input_filename,cell_label_filename,cell_label_color_filename,fl
     r = re.compile("^MT-",flags=re.IGNORECASE)
     mt_genes = filter(r.match, input_genes)
     if(len(mt_genes)>0):
-        print('remove mitochondrial genes:')
-        print(mt_genes)
-        input_data.drop(mt_genes,axis=0,inplace=True)
+        # print('remove mitochondrial genes:')
+        # print(mt_genes)
+        # input_data.drop(mt_genes,axis=0,inplace=True)
         input_genes = input_data.index.tolist()
     if(len(input_genes)!=len(set(input_genes))):
         uni_genes,uni_counts = np.unique(input_genes,return_counts=True)
