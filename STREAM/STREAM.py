@@ -2314,11 +2314,11 @@ def Stream_Plot(df_rooted_tree,flat_tree,dict_branches,node_start,dict_node_stat
              length_includes_head= True, clip_on = False)
     if(mode == 'normal'):
         if(flag_web):
-            plt.savefig(file_path_S + '/stream_plot.png',pad_inches=1,bbox_inches='tight',dpi=120)
+            plt.savefig(file_path_S + '/stream_plot.png',pad_inches=1,bbox_inches='tight',dpi=300)
         else:
             plt.legend(legend_labels,prop={'size':45},loc='center', bbox_to_anchor=(0.5, 1.20),ncol=int(ceil(len(legend_labels)/2.0)), \
                        fancybox=True, shadow=True)
-            plt.savefig(file_path_S + '/stream_plot.pdf',pad_inches=1,bbox_inches='tight',dpi=120)
+            plt.savefig(file_path_S + '/stream_plot.pdf',pad_inches=1,bbox_inches='tight',dpi=300)
     if(mode == 'contracted'):
         plt.legend(legend_labels,prop={'size':45},loc='center', bbox_to_anchor=(0.5, 1.20),ncol=int(ceil(len(legend_labels)/2.0)), \
                    fancybox=True, shadow=True)
